@@ -19,3 +19,7 @@ NOTES
 
 CITATION
 ------
+
+LICENSE
+------
+Copyright @ 2023 Stavros Giannoukakos
