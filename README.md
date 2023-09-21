@@ -32,4 +32,6 @@ LICENSE
 ------
 Copyright @ 2023 Stavros Giannoukakos
 
+Licensed under the Apache License, Version 2.0
+
 
