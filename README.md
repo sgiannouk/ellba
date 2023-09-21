@@ -32,7 +32,7 @@ Use the [GitHub issue tracker](https://github.com/sgiannouk/ellba/issues) to get
 
 CITATION
 ------
-
+Our article will be published soon...
 
 LICENSE
 ------
