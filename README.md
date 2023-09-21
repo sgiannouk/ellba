@@ -28,10 +28,12 @@ NOTES
 CITATION
 ------
 
+
 LICENSE
 ------
 Copyright @ 2023 Stavros Giannoukakos
 
-Licensed under the Apache License, Version 2.0
+The entire software is licensed under the Apache License, Version 2.0
+The terms and conditions of both licenses can be found in the [LICENSE](https://github.com/sgiannouk/ellba/edit/main/README.md#:~:text=.gitignore-,LICENSE,-README.md) file.
 
 
