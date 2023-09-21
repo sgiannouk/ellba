@@ -17,14 +17,18 @@ INSTALLATION
 ------
 The ELLBA software can be downloaded and installed a Docker Image that can be found here.
 
-OUTPUT
+USAGE
 ------
 
-USAGE
+OUTPUT
 ------
 
 NOTES
 ------
+
+GET HELP
+------
+Use the [GitHub issue tracker](https://github.com/sgiannouk/ellba/issues) to get help or to report bugs.
 
 CITATION
 ------
