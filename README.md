@@ -34,6 +34,6 @@ LICENSE
 Copyright @ 2023 Stavros Giannoukakos
 
 The entire software is licensed under the Apache License, Version 2.0
-The terms and conditions of both licenses can be found in the [LICENSE](https://github.com/sgiannouk/ellba/edit/main/README.md#:~:text=.gitignore-,LICENSE,-README.md) file.
+The terms and conditions of both licenses can be found in the [LICENSE]([https://github.com/sgiannouk/ellba/edit/main/README.md#:~:text=.gitignore-,LICENSE,-README.md](https://github.com/sgiannouk/ellba/blob/main/LICENSE)https://github.com/sgiannouk/ellba/blob/main/LICENSE) file.
 
 
