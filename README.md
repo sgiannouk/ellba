@@ -5,7 +5,8 @@
 Liquid biopsy-derived RNA sequencing (lbRNA-seq) holds immense potential for non-invasive cancer diagnostics due to its simplicity and repeatability. However, challenges arise from the lack of standardized protocols and technical variability, hampering clinical integration and leading to issues of reproducibility. To address these hurdles, we introduce a comprehensive workflow with four main objectives: 
     
     1) Harnessing the diverse molecular and functional features accessible through lbRNA-seq
-    2) Implementing an Ensemble Learning framework to exploit the complementary information inherent in different feature types
+    2) Implementing an Ensemble Learning framework to exploit the complementary information inherent 
+       in different feature types
     3) Rigorously benchmarking intra-sample normalization methods for improved clinical relevance
     4) Evaluating performance across independent test sets to ensure robust reproducibility. 
     
