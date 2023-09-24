@@ -26,6 +26,7 @@ OUTPUT
 NOTES
 ------
 - ELLBA software accepts only fastq files (accepted formats: *.fastq.gz, *.fq.gz *.fastq, *.fq)
+- In case for paired end files, the read number must be indicated in both mate file name (e.g for read 1: ".R1.", "_R1." ,"_R1_", ".r1.", "_r1.","_r1_", or "_1.")
 - 
 
 GET HELP
