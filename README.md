@@ -25,6 +25,8 @@ OUTPUT
 
 NOTES
 ------
+- ELLBA software accepts only fastq files (accepted formats: *.fastq.gz, *.fq.gz *.fastq, *.fq)
+- 
 
 GET HELP
 ------
