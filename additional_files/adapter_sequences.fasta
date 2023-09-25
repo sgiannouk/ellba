@@ -1,0 +1,8 @@
+>nextera_transposase_sequence
+CTGTCTCTTATA
+>illumina_universal_adapter
+AGATCGGAAGAG
+>illumina_small_rna_adapter
+ATGGAATTCTCG
+>solid_small_rna_adapter
+CGCCTTGGCCGT
