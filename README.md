@@ -1,6 +1,7 @@
 # ELLBA (Ensemble Learning for Liquid Biopsy Analysis)
 
-![Figure S1 GeneralScheme](https://github.com/sgiannouk/ellba/assets/22454788/7be1d871-5a02-43ca-a7b1-091b3c1e53e4)
+![Figure S1 GeneralScheme](https://github.com/sgiannouk/ellba/assets/22454788/690a075f-b90a-466a-adc6-2e1e97166f13)
+
 
 Liquid biopsy-derived RNA sequencing (lbRNA-seq) holds immense potential for non-invasive cancer diagnostics due to its simplicity and repeatability. However, challenges arise from the lack of standardized protocols and technical variability, hampering clinical integration and leading to issues of reproducibility. To address these hurdles, we introduce a comprehensive workflow with four main objectives: 
     
@@ -26,7 +27,8 @@ OUTPUT
 NOTES
 ------
 - ELLBA software accepts only fastq files (accepted formats: *.fastq.gz, *.fq.gz *.fastq, *.fq)
-- In case for paired end files, the read number must be indicated in both mate file name (e.g for read 1: ".R1.", "_R1." ,"_R1_", ".r1.", "_r1.","_r1_", or "_1.")
+- In case for paired end files, the read number must be indicated in both mate file name 
+(e.g for read 1: ".R1.", "_R1." ,"_R1_", ".r1.", "_r1.","_r1_", or "_1.")
 - 
 
 GET HELP
