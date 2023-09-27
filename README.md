@@ -134,21 +134,21 @@ OUTPUT
 ------
 
 ```bash
-myproject_analysis
+myproject_analysis  # The primary output directory encompassing the ELLBA analysis
 │
-├── preprocessed_data
-│   ├── SRX4472768_CLD.R1.trimmed.fq.gz
+├── preprocessed_data  # The directory that holds all preprocessed FASTQ files
+│   ├── SRX4472768_CLD.R1.trimmed.fq.gz  # Example of preprocessed fastq file
 │   └── ...
-├── alignments
+├── alignments  # The directory housing the STAR aligner output files
 │   ├── SRX4472768_CLD.aligned.genome.bam
 │   ├── SRX4472768_CLD.aligned.transcriptome.bam
 │   └── ...
-├── gene_expression
+├── gene_expression  # Directory containing individual sample gene expression files
 │   ├── sample_stats.tab
 │   ├── SRX4472768_CLD.gene-expression.tsv
 │   └── ...
-├── gene_fusion
-│   ├── SRX4472768_CLD.fusion.tsv
+├── gene_fusion  The directory where all detected gene fusions for each sample are stored
+│   ├── SRX4472768_CLD.fusion.tsv  # Example of detected gene fusion is sample SRX4472768_CLD
 │   └── ...
 ├── isoform_expression
 │   ├── SRX4472768_CLD
@@ -211,6 +211,8 @@ NOTES
 - ELLBA software is designed to exclusively accept fastq files as input data for its analysis. It accommodates a range of fastq file formats, including compressed formats such as *.fastq.gz and *.fq.gz, as well as uncompressed formats like *.fastq and *.fq. Ensuring that your input data adheres to one of these supported fastq formats is crucial to ensure smooth and successful processing by the ELLBA software.
 
 - In the case of paired-end files, it's essential to indicate the read number in both mate file names. Common conventions include using ".R1." and ".R2." in the filenames. These naming patterns help distinguish between the first and second reads in a pair, which is crucial for proper processing and alignment of paired-end sequencing data.
+
+- Please use file names that do not contain special characters, except for underscores ("_"). For paired-end input raw fastq files, follow a format like "SRX4472768_CLD.R1.fastq.gz" and "SRX4472768_CLD.R2.fastq.gz." For single-end raw fastq files, adopt a format such as "SRX4472768_CLD.fastq.gz." In both cases, "SRX4472768_CLD" should serve as the file name and should be clearly indicated in the clinical_data file.
 
 - **Important Note:** If you intend to utilize an external validation set within the classification.py script, it's crucial to run the ellba.py script twice. First, you should execute it using the training set data from the 'raw_data' directory. Afterward, you'll need to run the ellba.py script once more, this time specifying the validation_set directory as the input directory. Additionally, make sure to use the clinical_data file located within the validation_set directory during this second run. 
 
