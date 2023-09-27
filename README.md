@@ -119,18 +119,18 @@ optional arguments:
 
 EXAMPLE USAGE
 ------
-Before proceeding with any of the following steps, it's essential to obtain all the required reference files and databases crucial for the ELLBA workflow. To accomplish this, navigate to the "references" directory situated within the ELLBA docker's home directory. Inside this directory, you'll find the Python script named "download_references.py." Execute this script to initiate the download process:
+1. Before proceeding with any of the following steps, it's essential to obtain all the required reference files and databases crucial for the ELLBA workflow. To accomplish this, navigate to the "references" directory situated within the ELLBA docker's home directory. Inside this directory, you'll find the Python script named "download_references.py." Execute this script to initiate the download process:
 ```bash
-$ cd references
-$ python download_references.py
+cd references
+python download_references.py
 ```
 
-To initiate the ellba.py script, please execute the following command:
+2. To initiate the ellba.py script, please execute the following command:
 ```bash
 python ellba.py -i /raw/data/dir -c /raw/data/dir/clinical_data.txt -ctrl Healthy -cond Cancer -pj NSCLC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
 ```
 
-To proceed with the machine_learning.py script, please execute the following command:
+3. To proceed with the machine_learning.py script, please execute the following command:
 ```bash
 python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl Healthy -cond Cancer -pj NSCLC -ra /path/to/reference_annotation.gtf
 ```
