@@ -22,7 +22,6 @@ if (length(args) == 6) {
 
 
 suppressPackageStartupMessages({
-  library("dplyr")
   library("edgeR")
   library("DESeq2")
   library("RUVSeq")
@@ -31,6 +30,7 @@ suppressPackageStartupMessages({
   library("data.table")
   library("RColorBrewer")
   library("BiocParallel")
+  library("dplyr")
 })
 
 
@@ -210,5 +210,5 @@ rm(keep, edgeR_table)
 
 cpm_matrix <- cpm(filt_data)
 write.table(data.frame("featureID"=rownames(cpm_matrix), cpm_matrix), file=file.path(main_outdir, paste0(typeof, "_expression_matrix.filtered.scaled.tsv")), sep="\t", row.names = F, quote=FALSE)
-plotPCAfunc(cpm_matrix, paste0(typeof,".cpm"))
+# plotPCAfunc(cpm_matrix, paste0(typeof,".cpm"))
 rm(cpm_matrix)
