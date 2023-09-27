@@ -147,23 +147,23 @@ myproject_analysis  # The primary output directory encompassing the ELLBA analys
 │   ├── sample_stats.tab
 │   ├── SRX4472768_CLD.gene-expression.tsv
 │   └── ...
-├── gene_fusion  The directory where all detected gene fusions for each sample are stored
+├── gene_fusion  # The directory where all detected gene fusions for each sample are stored
 │   ├── SRX4472768_CLD.fusion.tsv  # Example of detected gene fusion is sample SRX4472768_CLD
 │   └── ...
-├── isoform_expression
+├── isoform_expression  # Directory containing individual sample files resulting from isoform expression analysis
 │   ├── SRX4472768_CLD
 │   └── ..
-├── alt_isoform_expression
+├── FoCT  # Directory hosting Fraction of Canonical Transcript analysis
 │   └── abundant_transcripts_db.json
-├── rna_editing
+├── rna_editing  # This directory houses both prefiltered and filtered RNA editing events for individual samples
 │   ├── SRX4472768_CLD.out.filtered.table.txt
 │   ├── SRX4472768_CLD.out.table.txt
 │   └── ...
-├── snv
-│   ├── RNAediting_events_to_exclude.tsv
+├── snv  # Directory containing variant calling analysis
+│   ├── RNAediting_events_to_exclude.tsv  # RNA editing events to be excluded from SNVs
 │   ├── SRX4472768_CLD.bcftools.filtered.vcf.gz
 │   └── ...
-├── filtered_matrices
+├── filtered_matrices  # The directory where all filtered feature matrices are stored. This directory serves as the input for the classification script.
 │   ├── gene_expression_matrix.filtered.scaled.tsv
 │   ├── isoform_expression_matrix.filtered.scaled.tsv
 │   ├── alternative_isoform_expression_matrix.filtered.tsv
@@ -171,34 +171,34 @@ myproject_analysis  # The primary output directory encompassing the ELLBA analys
 │   ├── RNAediting_expression_matrix.filtered.tsv
 │   ├── snp_expression_matrix.genotype.filtered.tsv
 │   └── clinical_data.filtered.tsv
-│   ├── plots
+│   ├── plots  # Exploratory analysis results and plots
 │   │   ├── Fig1.A.gene.pca.unfiltered.condition.jpeg
 │   │   ├── Fig1.A.isoform.pca.unfiltered.condition.jpeg
 │   │   └── ...
-│   ├── prefiltered_matrices
+│   ├── prefiltered_matrices  # The directory where all feature matrices  prior to any filtering steps are stored
 │   │   ├── gene_expression_matrix.prefiltered.tab
 │   │   ├── isoform_expression_matrix.reads.prefiltered.tab
 │   │   ├── alternative_isoform_expression_matrix.prefiltered.tab
 │   │   ├── gene_fusion_expression_matrix.prefiltered.tab
 │   │   ├── RNAediting_expression_matrix.prefiltered.tab
 │   │   └── snp_expression_matrix.prefiltered.tab
-├── classification
-│   ├── metrics_overview.txt
-│   ├── selected_features.tsv
-│   ├── individual_features
+├── classification  # All the machine learning magic resides here
+│   ├── metrics_overview.txt  # Overall stats from both training and testing steps
+│   ├── selected_features.tsv  # Feature selection output for each feature type
+│   ├── individual_features  # Individual feature stats and plots
 │   │   ├── gene_expression.ROCplot.png
 │   │   ├── gene_expression.ConfusionMatrixPlot.testingset.png
 │   │   └── ...
-│   └── voting_classification
-│       ├── gene_expression.PredResults.txt
+│   └── voting_classification  # Ensemble learning output direcotry
+│       ├── gene_expression.PredResults.txt  # Individual feature type stats
 │       ├── ...
-│       ├── softVoting.TestingSet.results.tsv
-│       ├── softVoting.TestingSet.ROCplot.png
-│       └── softVoting.TestingSet.ConfusionMatrixPlot.png
-├── reports
-│   ├── preliminary_summarised_report.html
-│   ├── post-alignment_summarised_report.html
-│   ├── pipeline_reports
+│       ├── softVoting.TestingSet.results.tsv  # Soft voting stats
+│       ├── softVoting.TestingSet.ROCplot.png  # Soft voting ROC plot
+│       └── softVoting.TestingSet.ConfusionMatrixPlot.png  # Soft voting Confusion Matrix plot
+├── reports  # Analysis and QC reports are stored here
+│   ├── preliminary_summarised_report.html  # Initial QC report of the raw data
+│   ├── post-alignment_summarised_report.html  # After alignmnet QC report
+│   ├── pipeline_reports  # Reports of each analysis step
 │   ├── preprocessing_reports
 │   ├── alignment_reports
 │   ├── gene_fusion_reports
