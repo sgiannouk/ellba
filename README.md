@@ -15,7 +15,8 @@ Across several datasets spanning various biosources, we observe that the optimal
 
 INSTALLATION
 ------
-The ELLBA software can be downloaded and installed a Docker Image from the [Docker Hub](https://hub.docker.com/).
+The ELLBA software can be downloaded and installed a Docker Image from the <a href="[URL](https://hub.docker.com/)" target="_blank">Docker Hub</a>
+
 
 USAGE
 ------
