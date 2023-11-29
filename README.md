@@ -20,7 +20,7 @@ The ELLBA software can be downloaded and installed a Docker Image from the [Dock
 
 USAGE
 ------
-ELLBA operates in two distinct phases. The initial step is dedicated to the analysis of lbRNA-Seq data, involving the extraction of the six primary feature types and conducting data cleaning and normalization processes:
+While ELLBA is capable of analyzing any RNA-Seq data, it is specifically tested and optimised for lbRNA-seq data, ensuring robust and accurate results in this particular context. ELLBA operates in two distinct phases. The initial step is dedicated to the analysis of lbRNA-Seq data, involving the extraction of the six primary feature types and conducting data cleaning and normalization processes:
 
 <pre>
 usage: ellba.py [positional arguments] [optional arguments]
