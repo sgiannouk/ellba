@@ -126,14 +126,20 @@ $ cd references
 $ python download_references.py
 ```
 
-2. To initiate the ellba.py script, please execute the following command:
+2. For user convenience, we offer the option to run a specific test set derived from Bahn et al.'s Circulating Epithelial Cells dataset, accessible via their publication here. To obtain the required test data, simply navigate to the 'test_data' directory in the repository and execute the 'download_testdata.py' script. 
 ```bash
-$ python ellba.py -i /raw/data/dir -c /raw/data/dir/clinical_data.txt -ctrl Healthy -cond Cancer -pj NSCLC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
+$ cd test_data
+$ python download_testdata.py
 ```
 
-3. To proceed with the machine_learning.py script, please execute the following command:
+3. To initiate the ellba.py script, please execute the following command:
 ```bash
-$ python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl Healthy -cond Cancer -pj NSCLC -ra /path/to/reference_annotation.gtf
+$ python ellba.py -i /test/data/dir -c /test/data/dir/clinical_data.txt -ctrl NonCancer -cond Cancer -pj NSCLC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
+```
+
+4. To proceed with the machine_learning.py script, please execute the following command:
+```bash
+$ python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl NonCancer -cond Cancer -pj NSCLC -ra /path/to/reference_annotation.gtf
 ```
 
 
