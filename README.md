@@ -15,7 +15,46 @@ Across several datasets spanning various biosources, we observe that the optimal
 
 INSTALLATION
 ------
-The ELLBA software can be downloaded and installed a Docker Image from the [Docker Hub](https://hub.docker.com/r/ugrbioinfo/ellba).
+The ELLBA software is available for download and installation as a Docker Image from the [Docker Hub](https://hub.docker.com/r/ugrbioinfo/ellba). Alternatively, you can proceed with the following instructions:
+
+## Getting Started
+
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/) installed on your system.
+
+### Installation
+
+1. **Pull the Docker Image:**
+    ```bash
+    docker pull ugrbioinfo/ellba
+    ```
+
+2. **Run the Docker Container:**
+    ```bash
+    docker run -d -p 8080:80 --name ellba ugrbioinfo/ellba
+    ```
+    - `-d`: Run the container in the background.
+    - `-p 8080:80`: Map port 8080 on your host machine to port 80 in the container.
+    - `--name ellba`: Assign the name 'ellba' to the container.
+
+3. **Access the Container:**
+    - Once the container is running, access it through your web browser or other client tools, depending on the application.
+
+4. **Stopping and Removing the Container:**
+    - To stop the running container:
+        ```bash
+        docker stop ellba
+        ```
+
+    - To remove the container (after stopping it):
+        ```bash
+        docker rm ellba
+        ```
+
+## Additional Information
+
+- For more details about the Docker image and its usage, refer to the documentation provided by the image publisher.
 
 
 USAGE
