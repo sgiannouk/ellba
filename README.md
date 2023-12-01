@@ -173,12 +173,12 @@ $ python download_testdata.py
 
 3. To initiate the ellba.py script, please execute the following command:
 ```bash
-$ python ellba.py -i /test/data/dir -c /test/data/dir/clinical_data.txt -ctrl NonCancer -cond Cancer -pj NSCLC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
+$ python ellba.py -i /test/data/dir -c /test/data/dir/clinical_data.txt -ctrl NonCancer -cond Cancer -pj HCC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
 ```
 
 4. To proceed with the machine_learning.py script, please execute the following command:
 ```bash
-$ python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl NonCancer -cond Cancer -pj NSCLC -ra /path/to/reference_annotation.gtf
+$ python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl NonCancer -cond Cancer -pj HCC -ra /path/to/reference_annotation.gtf
 ```
 
 
