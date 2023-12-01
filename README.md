@@ -126,7 +126,7 @@ $ cd references
 $ python download_references.py
 ```
 
-2. For user convenience, we offer the option to run a specific test set of Circulating Epithelial Cells derived from [Bahn et al.]([https://hub.docker.com/r/ugrbioinfo/ellba](https://doi.org/10.1053/j.gastro.2018.09.020)). To obtain the required test data, simply navigate to the 'test_data' directory in the repository and execute the 'download_testdata.py' script. 
+2. For user convenience, we offer the option to run a specific test set of Circulating Epithelial Cells derived from [Bahn et al.](https://doi.org/10.1053/j.gastro.2018.09.020). To obtain the required test data, simply navigate to the 'test_data' directory in the repository and execute the 'download_testdata.py' script. 
 ```bash
 $ cd test_data
 $ python download_testdata.py
