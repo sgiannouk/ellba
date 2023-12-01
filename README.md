@@ -15,11 +15,12 @@ Across several datasets spanning various biosources, we observe that the optimal
 
 INSTALLATION
 ------
-The ELLBA software can be downloaded and installed a Docker Image that can be found here.
+The ELLBA software can be downloaded and installed a Docker Image from the [Docker Hub](https://hub.docker.com/r/ugrbioinfo/ellba).
+
 
 USAGE
 ------
-ELLBA operates in two distinct phases. The initial step is dedicated to the analysis of lbRNA-Seq data, involving the extraction of the six primary feature types and conducting data cleaning and normalization processes:
+While ELLBA is capable of analyzing any RNA-Seq data, it is specifically tested and optimised for lbRNA-seq data, ensuring robust and accurate results in this particular context. ELLBA operates in two distinct phases. The initial step is dedicated to the analysis of lbRNA-Seq data, involving the extraction of the six primary feature types and conducting data cleaning and normalization processes:
 
 <pre>
 usage: ellba.py [positional arguments] [optional arguments]
@@ -119,14 +120,20 @@ optional arguments:
 
 EXAMPLE USAGE
 ------
-To initiate the ellba.py script, please execute the following command:
+1. Before proceeding with any of the following steps, it's essential to obtain all the required reference files and databases crucial for the ELLBA workflow. To accomplish this, navigate to the "references" directory situated within the ELLBA docker's home directory. Inside this directory, you'll find the Python script named "download_references.py." Execute this script to initiate the download process:
 ```bash
-python ellba.py -i /raw/data/dir -c /raw/data/dir/clinical_data.txt -ctrl Healthy -cond Cancer -pj NSCLC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
+$ cd references
+$ python download_references.py
 ```
 
-To proceed with the machine_learning.py script, please execute the following command:
+2. To initiate the ellba.py script, please execute the following command:
 ```bash
-python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl Healthy -cond Cancer -pj NSCLC -ra /path/to/reference_annotation.gtf
+$ python ellba.py -i /raw/data/dir -c /raw/data/dir/clinical_data.txt -ctrl Healthy -cond Cancer -pj NSCLC -g /path/to/reference_genome.fasta -ra /path/to/reference_annotation.gtf
+```
+
+3. To proceed with the machine_learning.py script, please execute the following command:
+```bash
+$ python classification.py -td /dataset/data_analysis/filtered_matrices -ctrl Healthy -cond Cancer -pj NSCLC -ra /path/to/reference_annotation.gtf
 ```
 
 
